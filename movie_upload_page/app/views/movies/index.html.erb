@@ -1,0 +1,37 @@
+
+<p style="color: green"><%= notice %></p>
+
+<div class="movmain">
+<div class="title">
+<%= link_to movies_path do %>
+  <%= image_tag "logo.jpg", height: 150  %>
+<% end %>
+<h1>Movie List</h1></div>
+
+
+<table>
+<tr>
+<th>Movie Name</th>  
+<th>Description</th>
+<th>Director Name</th>
+<th>Language</th>
+<th>Link</th>
+
+</tr>
+<div id="movies">
+  <% @movies.each do |movie| %>
+<tr>
+
+<%= render movie %>
+
+    <td>
+      <%= link_to "Details", movie %>
+    </td>
+    </tr>
+   
+  <% end %>
+
+</div>
+</table>
+<br></br>
+<%= link_to "New movie", new_movie_path %></div>

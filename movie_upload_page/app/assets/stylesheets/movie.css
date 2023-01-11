@@ -1,0 +1,109 @@
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container
+{
+    font-size: larger;
+    /* color: brown;
+    background-color: aquamarine; */
+    height: 55%;
+    width: 55%;
+}
+tr,td
+{
+    border: 1px solid black;
+   padding: 10px;
+   text-align: center;
+}
+th{
+    border: 1px solid black;
+   padding: 10px;
+   text-align: center;
+   background-color: black;
+   color: white;
+}
+table
+{
+    border: 2px solid black;
+    margin:3% ;
+}
+.movmain
+{
+    /* color: white; */
+    /* background-color: black; */
+    /* font-size: x-large; */
+    width: 55%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.title{
+    width: 94%;
+    text-align: center;
+    /* background: rgb(80, 144, 218); */
+    /* width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; */
+
+  
+    
+
+}
+form>div{
+    padding:5px;
+    /* display: flex; */
+    margin-left: 28%;
+}
+.form{
+    width:90%;
+    /* display: flex; */
+    /* background-color: lightgrey; */
+}
+.form>p{
+    /* text-align: center; */
+    /* padding:5px; */
+   
+    margin-left: 28%;
+}
+.dis
+{
+    display: flex;
+
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .overlay:hover {
+    width: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }

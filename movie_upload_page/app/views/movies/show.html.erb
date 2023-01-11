@@ -1,0 +1,38 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="movmain">
+<div class="title">
+<%= link_to movies_path do %>
+  <%= image_tag "logo.jpg", height: 150  %>
+<% end %><h1>Movie Details</h1></div>
+<div class="form">
+  <p>
+    <strong>Name:</strong><br/>
+    <%= @movie.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong><br/>
+    <%= @movie.description %>
+  </p>
+
+  <p>
+    <strong>Director Name:</strong><br/>
+    <%= @movie.director_name %>
+  </p>
+
+  <p>
+    <strong>Language:</strong><br/>
+    <%= @movie.language %>
+  </p>
+
+
+
+<div>
+  <%= link_to "Edit this movie", edit_movie_path(@movie) %> |
+  <%= link_to "Back to movies", movies_path %>
+<br></br>
+  <%= button_to "Destroy this movie", @movie, method: :delete %>
+
+</div></div>
+</div>
